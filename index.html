@@ -1,36 +1,106 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>World Cup Predictions 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup 2026 Fan Hub</title>
+
 <style>
 body{
-font-family:Arial;
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#006600,#cc0000);
+color:white;
 text-align:center;
-background:#0b0f1a;
-color:white;
-padding:40px;
 }
-input,select{
-padding:10px;
-margin:10px;
-width:250px;
+
+header{
+padding:40px 20px;
+background:rgba(0,0,0,0.3);
 }
-button{
-padding:10px 20px;
-background:#00c853;
-color:white;
+
+h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:1.2rem;
+opacity:0.9;
+}
+
+.countdown{
+margin:30px auto;
+padding:20px;
+width:80%;
+max-width:500px;
+background:rgba(255,255,255,0.15);
+border-radius:15px;
+font-size:1.5rem;
+}
+
+.section{
+margin:30px auto;
+padding:25px;
+width:90%;
+max-width:600px;
+background:rgba(255,255,255,0.12);
+border-radius:15px;
+}
+
+input, select{
+width:90%;
+padding:12px;
+margin:10px 0;
 border:none;
+border-radius:8px;
+}
+
+button{
+background:gold;
+color:black;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+font-weight:bold;
 cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+background:rgba(0,0,0,0.3);
+}
+
+.flag{
+font-size:40px;
 }
 </style>
 </head>
+
 <body>
 
-<h1>⚽ World Cup Predictions 2026 ⚽</h1>
+<header>
+<div class="flag">🇵🇹⚽🏆</div>
+<h1>World Cup 2026 Fan Hub</h1>
+<p class="subtitle">Predictions • Football Passion • World Cup Dreams</p>
+</header>
 
-<p>Predict the World Cup Winner!</p>
+<div class="countdown">
+⏳ Countdown to World Cup Final
+<br><br>
+<div id="timer"></div>
+</div>
 
-<input type="text" placeholder="Your Name"><br>
+<div class="section">
+<h2>🏆 Predict The World Cup Winner</h2>
+
+<input type="text" placeholder="Your Name">
 
 <select>
 <option>Portugal</option>
@@ -39,13 +109,68 @@ cursor:pointer;
 <option>France</option>
 <option>England</option>
 <option>Spain</option>
-</select><br>
+<option>Germany</option>
+</select>
 
+<br>
 <button>Submit Prediction</button>
+</div>
 
-<h2>🏆 Who will win the Golden Boot?</h2>
-
+<div class="section">
+<h2>🥇 Golden Boot Prediction</h2>
 <input type="text" placeholder="Player Name">
+<br>
+<button>Submit</button>
+</div>
+
+<div class="section">
+<h2>⭐ Golden Ball Prediction</h2>
+<input type="text" placeholder="Player Name">
+<br>
+<button>Submit</button>
+</div>
+
+<div class="section">
+<h2>🔥 Fan Message</h2>
+<p>
+"One nation. One dream. One World Cup."
+</p>
+<p>
+Who do you think will lift the trophy in 2026?
+</p>
+</div>
+
+<footer>
+⚽ World Cup 2026 Fan Hub • Made for Football Fans Worldwide 🌍
+</footer>
+
+<script>
+const finalDate = new Date("July 19, 2026 20:00:00").getTime();
+
+setInterval(function() {
+
+const now = new Date().getTime();
+
+const distance = finalDate - now;
+
+const days = Math.floor(distance / (1000*60*60*24));
+
+const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+
+const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+
+const seconds = Math.floor((distance % (1000*60)) / 1000);
+
+document.getElementById("timer").innerHTML =
+days + " Days " +
+hours + " Hours " +
+minutes + " Min " +
+seconds + " Sec";
+
+},1000);
+</script>
 
 </body>
 </html>
+```
+
