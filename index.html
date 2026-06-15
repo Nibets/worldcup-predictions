@@ -46,8 +46,10 @@ margin:30px auto;
 padding:25px;
 width:90%;
 max-width:600px;
-background:rgba(255,255,255,0.12);
-border-radius:15px;
+background:rgba(255,255,255,0.15);
+border-radius:20px;
+backdrop-filter:blur(8px);
+box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
 input, select{
@@ -66,6 +68,7 @@ border:none;
 border-radius:8px;
 font-weight:bold;
 cursor:pointer;
+transition:0.3s;
 }
 
 button:hover{
@@ -104,13 +107,13 @@ font-size:40px;
 <input type="text" placeholder="Your Name">
 
 <select>
-<option>Portugal</option>
-<option>Argentina</option>
-<option>Brazil</option>
-<option>France</option>
-<option>England</option>
-<option>Spain</option>
-<option>Germany</option>
+<option>Portugal 🇵🇹</option>
+<option>Argentina 🇦🇷</option>
+<option>Brazil 🇧🇷</option>
+<option>France 🇫🇷</option>
+<option>England 🏴</option>
+<option>Spain 🇪🇸</option>
+<option>Germany 🇩🇪</option>
 </select>
 
 <br>
@@ -130,6 +133,7 @@ font-size:40px;
 <br>
 <button>Submit</button>
 </div>
+
 <div class="section">
 <h2>🇵🇹 Portugal Fan Zone</h2>
 
@@ -155,8 +159,9 @@ font-size:40px;
 
 <button>Vote</button>
 </div>
+
 <div class="section">
-  <h2>⚽🚀 Football & Crypto</h2>
+<h2>⚽🚀 Football & Crypto</h2>
 
 <p>
 Some people watch charts.
@@ -174,13 +179,30 @@ Enjoy the football journey.
 🇵🇹 Portugal Fans • ⚽ Football • 🚀 Crypto
 </p>
 </div>
+
+<div class="section">
 <h2>🔥 Fan Message</h2>
+
 <p>
 "One nation. One dream. One World Cup."
 </p>
+
 <p>
 Who do you think will lift the trophy in 2026?
 </p>
+</div>
+
+<div class="section">
+<h2>⚽ Final Match Prediction</h2>
+
+<input type="text" placeholder="Team 1">
+<input type="text" placeholder="Score">
+
+<input type="text" placeholder="Team 2">
+<input type="text" placeholder="Score">
+
+<br><br>
+<button>Submit Prediction</button>
 </div>
 
 <footer>
@@ -193,16 +215,12 @@ const finalDate = new Date("July 19, 2026 20:00:00").getTime();
 setInterval(function() {
 
 const now = new Date().getTime();
-
 const distance = finalDate - now;
 
-const days = Math.floor(distance / (1000*60*60*24));
-
-const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
-
-const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
-
-const seconds = Math.floor((distance % (1000*60)) / 1000);
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 document.getElementById("timer").innerHTML =
 days + " Days " +
@@ -210,10 +228,9 @@ hours + " Hours " +
 minutes + " Min " +
 seconds + " Sec";
 
-},1000);
+}, 1000);
 </script>
 
 </body>
 </html>
 ```
-
