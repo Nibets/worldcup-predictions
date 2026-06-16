@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +6,16 @@
 <title>World Cup 2026 Fan Hub</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial, sans-serif;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
 background:
-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
 url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
@@ -21,29 +25,28 @@ text-align:center;
 }
 
 header{
-padding:40px 20px;
-background:rgba(0,0,0,0.3);
+padding:60px 20px;
+background:rgba(0,0,0,0.4);
 }
 
 h1{
 font-size:3rem;
-margin-bottom:10px;
 text-shadow:0 0 15px gold;
+margin-bottom:15px;
 }
 
 .subtitle{
 font-size:1.2rem;
-opacity:0.9;
 }
 
 .countdown{
 margin:30px auto;
-padding:20px;
-width:80%;
-max-width:500px;
+padding:25px;
+width:90%;
+max-width:700px;
 background:rgba(255,255,255,0.15);
-border-radius:15px;
-font-size:1.5rem;
+border-radius:20px;
+backdrop-filter:blur(8px);
 }
 
 .section{
@@ -54,7 +57,6 @@ max-width:700px;
 background:rgba(255,255,255,0.15);
 border-radius:20px;
 backdrop-filter:blur(8px);
-box-shadow:0 0 20px rgba(0,0,0,0.3);
 border:1px solid rgba(255,255,255,0.2);
 transition:0.3s;
 }
@@ -63,10 +65,10 @@ transition:0.3s;
 transform:translateY(-5px);
 }
 
-input, select{
+input,select{
 width:90%;
 padding:12px;
-margin:10px 0;
+margin:10px;
 border:none;
 border-radius:8px;
 }
@@ -79,21 +81,20 @@ border:none;
 border-radius:8px;
 font-weight:bold;
 cursor:pointer;
-transition:0.3s;
 }
 
 button:hover{
 transform:scale(1.05);
 }
 
+.flag{
+font-size:50px;
+}
+
 footer{
 margin-top:40px;
 padding:20px;
-background:rgba(0,0,0,0.3);
-}
-
-.flag{
-font-size:40px;
+background:rgba(0,0,0,0.4);
 }
 </style>
 </head>
@@ -101,6 +102,7 @@ font-size:40px;
 <body>
 
 <header>
+
 <div class="flag">🇵🇹⚽🏆</div>
 
 <h1>World Cup 2026 Fan Hub</h1>
@@ -109,19 +111,26 @@ font-size:40px;
 🏆 Predict the Champions • ⚽ Support Your Nation • 🌍 Join Football Fans Worldwide
 </p>
 
-<p style="font-size:1.2rem;margin-top:15px;">
+<br>
+
+<p>
 The Home of World Cup Predictions & Portugal Fans 🇵🇹
 </p>
 
 </header>
 
 <div class="countdown">
-⏳ Countdown to World Cup Final
-<br><br>
+
+<h2>⏳ Countdown to World Cup Final</h2>
+
+<br>
+
 <div id="timer"></div>
+
 </div>
 
 <div class="section">
+
 <h2>🏆 Predict The World Cup Winner</h2>
 
 <input type="text" placeholder="Your Name">
@@ -137,49 +146,38 @@ The Home of World Cup Predictions & Portugal Fans 🇵🇹
 </select>
 
 <br>
+
 <button>Submit Prediction</button>
+
 </div>
 
 <div class="section">
+
 <h2>🥇 Golden Boot Prediction</h2>
+
 <input type="text" placeholder="Player Name">
+
 <br>
+
 <button>Submit</button>
+
 </div>
 
 <div class="section">
+
 <h2>⭐ Golden Ball Prediction</h2>
+
 <input type="text" placeholder="Player Name">
+
 <br>
+
 <button>Submit</button>
+
 </div>
 
 <div class="section">
+
 <h2>🇵🇹 Portugal Fan Zone</h2>
-  <div class="section">
-
-<h2>👑 Cristiano Ronaldo Corner</h2>
-
-<p>
-"The dream is alive. The captain is ready."
-</p>
-
-<p>
-How many goals will Ronaldo score in World Cup 2026?
-</p>
-
-<select>
-<option>1-3 Goals</option>
-<option>4-6 Goals</option>
-<option>7-9 Goals</option>
-<option>10+ Goals</option>
-</select>
-
-<br><br>
-
-<button>Vote For CR7</button>
-
-</div>
 
 <p>Will Portugal win the World Cup 2026?</p>
 
@@ -202,74 +200,93 @@ How many goals will Ronaldo score in World Cup 2026?
 <br><br>
 
 <button>Vote</button>
-</div>
 
+</div>
 <div class="section">
+
 <h2>⚽🚀 Football & Crypto</h2>
 
 <p>
 Some people watch charts.
+</p>
+
+<p>
 Some people watch football.
+</p>
+
+<p>
 We watch both.
 </p>
 
-<p>
-Follow the World Cup.
-Share your predictions.
-Enjoy the football journey.
-</p>
+<br>
 
 <p>
 🇵🇹 Portugal Fans • ⚽ Football • 🚀 Crypto
-  <div class="section">
+</p>
+
+</div>
+
+<div class="section">
+
 <h2>👑 Cristiano Ronaldo Corner</h2>
 
 <p>
 "The dream is alive. The captain is ready."
 </p>
 
+<br>
+
 <p>
-How many goals will Ronaldo score in this World Cup?
+How many goals will Ronaldo score in World Cup 2026?
 </p>
 
 <select>
-<option>1-3</option>
-<option>4-6</option>
-<option>7-9</option>
-<option>10+</option>
+<option>1-3 Goals</option>
+<option>4-6 Goals</option>
+<option>7-9 Goals</option>
+<option>10+ Goals</option>
 </select>
 
 <br><br>
 
 <button>Vote For CR7</button>
-</div>
-</p>
+
 </div>
 
 <div class="section">
+
 <h2>🔥 Fan Message</h2>
 
 <p>
-"One nation. One dream. One World Cup."
+One Nation. One Dream. One World Cup.
 </p>
+
+<br>
 
 <p>
 Who do you think will lift the trophy in 2026?
 </p>
+
 </div>
 
 <div class="section">
+
 <h2>⚽ Final Match Prediction</h2>
 
 <input type="text" placeholder="Team 1">
+
 <input type="text" placeholder="Score">
 
 <input type="text" placeholder="Team 2">
+
 <input type="text" placeholder="Score">
 
 <br><br>
+
 <button>Submit Prediction</button>
+
 </div>
+
 <div class="section">
 
 <h2>📸 Fan Wall</h2>
@@ -284,7 +301,9 @@ Share your best World Cup memory.
 
 <button>Share Memory</button>
 
-<p style="margin-top:20px;">
+<br><br>
+
+<p>
 ⚽ Portugal winning Euro 2016
 </p>
 
@@ -297,47 +316,42 @@ Share your best World Cup memory.
 </p>
 
 </div>
+
 <footer>
+
 ⚽ World Cup 2026 Fan Hub • Made for Football Fans Worldwide 🌍
-  <div class="section">
-<h2>📸 Fan Wall</h2>
 
-<p>
-Share your best World Cup memory.
-</p>
-
-<input type="text" placeholder="Your favorite football moment">
-
-<br><br>
-
-<button>Share Memory</button>
-
-<p style="margin-top:20px;">
-⚽ "Portugal winning Euro 2016"
-</p>
-
-<p>
-⚽ "Messi lifting the World Cup"
-</p>
-
-<p>
-⚽ "Ronaldo's hat-trick vs Spain"
-</p>
-</div>
 </footer>
 
 <script>
+
 const finalDate = new Date("July 19, 2026 20:00:00").getTime();
 
-setInterval(function() {
+setInterval(function(){
 
 const now = new Date().getTime();
+
 const distance = finalDate - now;
 
 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+const hours = Math.floor(
+(distance % (1000 * 60 * 60 * 24))
+/
+(1000 * 60 * 60)
+);
+
+const minutes = Math.floor(
+(distance % (1000 * 60 * 60))
+/
+(1000 * 60)
+);
+
+const seconds = Math.floor(
+(distance % (1000 * 60))
+/
+1000
+);
 
 document.getElementById("timer").innerHTML =
 days + " Days " +
@@ -345,9 +359,9 @@ hours + " Hours " +
 minutes + " Min " +
 seconds + " Sec";
 
-}, 1000);
+},1000);
+
 </script>
 
 </body>
 </html>
-```
