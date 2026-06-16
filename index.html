@@ -4,7 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>World Cup 2026 Fan Hub</title>
+@media(max-width:768px){
 
+h1{
+font-size:2rem;
+}
+
+.section,
+.countdown{
+width:95%;
+}
+
+input,
+select{
+width:95%;
+}
+
+}
 <style>
 *{
 margin:0;
@@ -74,13 +90,15 @@ border-radius:8px;
 }
 
 button{
-background:gold;
+background:linear-gradient(45deg,gold,#ffcc00);
 color:black;
 padding:12px 25px;
 border:none;
-border-radius:8px;
+border-radius:30px;
 font-weight:bold;
 cursor:pointer;
+transition:0.3s;
+box-shadow:0 0 15px rgba(255,215,0,0.5);
 }
 
 button:hover{
@@ -102,7 +120,7 @@ background:rgba(0,0,0,0.4);
 <body>
 
 <header>
-
+</header>
 <div class="flag">🇵🇹⚽🏆</div>
 
 <h1>World Cup 2026 Fan Hub</h1>
@@ -152,14 +170,19 @@ The Home of World Cup Predictions & Portugal Fans 🇵🇹
 </div>
 
 <div class="section">
+<h2>🏆 FIFA World Cup 2026</h2>
 
-<h2>🥇 Golden Boot Prediction</h2>
+<p style="font-size:1.3rem;">
+The road to glory starts now.
+</p>
 
-<input type="text" placeholder="Player Name">
+<p>
+Predict the champion, support your nation, and join football fans from around the world.
+</p>
 
-<br>
-
-<button>Submit</button>
+<p style="font-size:2rem;">
+🇵🇹 🇦🇷 🇧🇷 🇫🇷 🇪🇸 🇩🇪
+</p>
 
 </div>
 
@@ -180,7 +203,9 @@ The Home of World Cup Predictions & Portugal Fans 🇵🇹
 <h2>🇵🇹 Portugal Fan Zone</h2>
 
 <p>Will Portugal win the World Cup 2026?</p>
-
+<p style="font-size:1.1rem;color:gold;">
+💚❤️ We Believe. We Dream. We Fight Together. Vamos Portugal! ❤️💚
+</p>
 <select>
 <option>Yes 🇵🇹🏆</option>
 <option>No 😢</option>
